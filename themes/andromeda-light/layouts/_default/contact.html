@@ -1,0 +1,66 @@
+{{ define "main" }}
+
+{{ partial "page-header.html" . }}
+ 
+<section class="section pt-5">
+  <div class="container">
+    <div class="section pb-0 pt-0">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1617.3586394454082!2d110.35578819369222!3d-7.86082731590537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1650262882681!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="col-md-6 contact-widget" data-aos="fade-up">
+          <div class="block text-center">
+            <h3 class="mb-4">Alamat</h3>
+            <ul class="list-unstyled">
+              {{if .}}
+              <li>Perumahan Alam Citra Blok F-33, Panggungharjo, Sewon, Bantul, Yogyakarta 55188</li>
+              {{end}}
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-6 contact-widget" data-aos="fade-up">
+          <div class="block text-center">
+            <h3 class="mb-4">Whatsapp</h3>
+            <ul class="list-unstyled">
+              {{if .}}
+              <li><a href="https://wa.me/6281270054464?text=Halo%20CV%20Karya%20Anansa%20Jaya%2C%0ASaya%20mau%20bertanya%20tentang%20jasa%20konstruksi."><i class="lab la-whatsapp"></i></i>WA Klik Disini</a></li>
+              {{end}}
+            </ul>
+          </div>
+        </div>
+
+        {{with site.Params.contact_info.phone}}
+        <div class="col-md-6 contact-widget" data-aos="fade-up">
+          <div class="block text-center">
+            <h3 class="mb-4">Telepon</h3>
+            <ul class="list-unstyled">
+              {{if .}}
+              <li><a href="tel:{{.}}"><i class="las la-phone"></i>{{.}}</a></li>
+              {{end}}
+            </ul>
+          </div>
+        </div>
+        {{end}}
+
+        {{with site.Params.contact_info.email}}
+        <div class="col-md-6 contact-widget" data-aos="fade-up" data-aos-delay="100">
+          <div class="block text-center">
+            <h3 class="mb-4">Email</h3>
+            <ul class="list-unstyled">
+              {{if .}}
+              <li><a href="mailto:{{.}}"><i class="las la-envelope-open-text"></i>{{.}}</a></li>
+              {{end}}
+            </ul>
+          </div>
+        </div>
+        {{end}}
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

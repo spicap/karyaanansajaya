@@ -1,0 +1,65 @@
+{{define "main"}}
+
+<section class="section-sm pt-0">
+  <div class="container">
+    <div class="row justify-content-center" data-aos="fade-in">
+      <div class="col-lg-8">
+        <h2 class="mb-5 mt-5">{{.Params.title | markdownify}}</h2>
+        <div class="row mb-5" id="portofolio-gallery">
+            {{range .Params.block}}
+              {{if .img}}
+                <div class="col-6 col-md-4 mt-4">
+                  {{ if fileExists (add `assets/` .img) }}
+                  {{$img:= resources.Get .img }}
+                  {{$img:= $img.Fill "300x200"}}
+                  {{$imgWebp:= $img.Resize "300x200 webp"}}
+                  {{$imgfull:= resources.Get .img }}
+                  {{$imgfullWebp:= $imgfull.Resize "1920x webp" }}
+                  <a href="{{$imgfullWebp.RelPermalink}}" class="item">
+                    <img loading="lazy" decoding="async" class="img-fluid img-thumbnail" width="{{$img.Width}}" height="{{$img.Height}}" src="{{$imgWebp.RelPermalink}}" alt="" onerror="this.onerror=null;this.src='{{$img.RelPermalink}}'">
+                  </a>
+                  {{end}}
+                </div>
+              {{end}}
+          {{end}}
+          {{if .Params.imagesingle}}
+            <div class="col-12 mt-4">
+              {{ if fileExists (add `assets/` .Params.imagesingle) }}
+              {{$img:= resources.Get .Params.imagesingle }}
+              {{$img:= $img.Resize "800x"}}
+              {{$imgWebp:= $img.Resize "800x webp"}}
+              <img loading="lazy" decoding="async" class="img-fluid img-thumbnail" width="{{$img.Width}}" height="{{$img.Height}}" src="{{$imgWebp.RelPermalink}}" alt="" onerror="this.onerror=null;this.src='{{$img.RelPermalink}}'">
+              {{end}}
+            </div>
+          {{end}}
+        </div>
+        
+        <ul class="list-group mb-5">
+          {{if .Params.cat}}
+          <li class="list-group-item"><span class="list-title">Kategori</span>: {{.Params.cat | markdownify}}</li>
+          {{end}}
+          {{if .Params.location}}
+          <li class="list-group-item"><span class="list-title">Lokasi</span>: {{.Params.location | markdownify}}</li>
+          {{end}}
+          {{if .Params.year}}
+          <li class="list-group-item"><span class="list-title">Tahun</span>: {{.Params.year | markdownify}}</li>
+          {{end}}
+          {{if .Params.client}}
+          <li class="list-group-item"><span class="list-title">Client</span>: {{.Params.client | markdownify}}</li>
+          {{end}}
+        </ul>
+
+        <div class="content">
+          {{.Content}}
+        </div>
+
+        <p class="mt-5">
+          <a href="/portofolio" class="text-primary">&larr; Kembali ke halaman portofolio</a>
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{{end}}

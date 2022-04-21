@@ -1,0 +1,134 @@
+ /* CUSTOM CSS */
+
+ /* HOMEPAGE */ 
+.features{
+  font-size: $h4;
+}
+  
+.keunggulan{
+  font-size: $h4;
+  text-align:  center;
+
+  @include mobile {
+    font-size: $h5;
+  }
+}
+  
+.keunggulan i{
+  color: $primary-color;
+  font-size: 64px;
+}
+  
+ /* TENTANG KAMI */ 
+.legalitas{
+  background-color: #fafafa;
+}
+  
+.tentang-image{
+  padding-left: 100px;
+  padding-bottom: 40px;
+
+  @include mobile {
+    padding-left: 0px;
+  }
+}
+
+.tim i{
+  font-size: 8em;
+  }
+
+
+  /* PORTOFOLIO ISOTOPE */
+.portofolio-container{  
+
+  /* ---- isotope ---- */
+  .grid {
+    border: none;
+  }
+
+  /* clear fix */
+  .grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  /* Button */
+  .button-group .btn{
+    margin: 2px 0;
+  }
+
+  /* ---- .element-item ---- */
+  .element-item{
+    background-color: #f1f1f1;
+    border: none;
+    position: relative;
+    float: left;
+    margin: 15px;
+    padding: 0;
+    color: #262524;
+    transition: .2s;
+    max-width: 300px;
+
+    @include mobile {
+      max-width: 100%;
+    } 
+
+    &:hover {
+      margin-top: -5px
+    }
+
+    p{
+      text-transform: uppercase;
+      color: #666;
+      font-weight: 400;
+    }
+
+    h3{
+      font-size: $h5;
+      font-weight: normal;
+    }
+
+  } 
+
+  .landscape img{
+    width: 300px;
+    height: 200px;
+
+    @include mobile {
+      width: 360px;
+      max-width: 100%;
+    } 
+
+  }
+
+  .portrait img{
+    width: 300px;
+    height: 450px;
+
+    @include mobile {
+      width: 360px;
+      max-width: 100%;
+    } 
+  }       
+
+  .element-item > * {
+    margin: 0;
+    padding: 0;
+  }
+
+}
+
+/* PORTOFOLIO SINGLE */
+.list-title {
+  width: 30%;
+  display: inline-block;
+  font-weight: bold;
+}
+
+/* KONTAK KAMI */
+
+.contact-widget{
+  font-size: $h3;
+}
+

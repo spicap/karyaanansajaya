@@ -1,0 +1,40 @@
+{{define "main"}}
+
+{{ partial "page-header.html" . }}
+
+{{with .Params.portofolio}}
+<div class="portofolio-container container center pb-5">
+    
+    <div class="button-group filters-button-group text-center pt-5 pb-3">
+        <button class="btn btn-secondary btn-primary" data-filter="*">Tampilkan Semua</button>
+        <button class="btn btn-secondary" data-filter=".rumah">Rumah</button>
+        <button class="btn btn-secondary" data-filter=".interior">Interior</button>
+        <button class="btn btn-secondary" data-filter=".lain">Bangunan Lain</button>
+    </div>
+    
+    <div class="grid">
+        {{range .block}}
+        <div class="card element-item {{.category | markdownify}}">
+            <div class="{{.orientation | markdownify}}">
+                <a href="/portofolio/{{.link | markdownify}}/">
+                    {{ if fileExists (add `assets/` .img) }}
+                    {{$img:= resources.Get .img }}
+                    {{$img:= $img.Resize "300x"}}
+                    {{$imgWebp:= $img.Resize "300x webp"}}
+                    <img loading="lazy" decoding="async" class="img-fluid card-img-top" width="{{$img.Width}}" height="{{$img.Height}}" src="{{$imgWebp.RelPermalink}}" alt="testimonials" onerror="this.onerror=null;this.src='{{$img.RelPermalink}}'">
+                    {{end}}
+                    <div class="card-body text-center">
+                        <p class="mb-0 pt-2">{{.category | markdownify}}</p> 
+                        <h3>{{.title | markdownify}}</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+        {{end}}
+    </div>
+
+</div> <!-- .portofolio-container -->
+
+{{end}}
+{{end}}
+
