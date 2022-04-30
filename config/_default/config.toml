@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 baseURL = "/"
-title = "Jasa Konstruksi & General Kontraktor Jogja - CV. Karya Anansa Jaya"
+title = "General Contractor & Supplier - CV. Karya Anansa Jaya"
 theme = "andromeda-light"
 # post pagination
 paginate = "6"

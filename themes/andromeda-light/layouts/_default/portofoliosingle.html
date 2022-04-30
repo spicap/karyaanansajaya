@@ -12,7 +12,7 @@
                   {{ if fileExists (add `assets/` .img) }}
                   {{$img:= resources.Get .img }}
                   {{$img:= $img.Fill "300x200"}}
-                  {{$imgWebp:= $img.Resize "300x200 webp"}}
+                  {{$imgWebp:= $img.Fill "300x200 webp"}}
                   {{$imgfull:= resources.Get .img }}
                   {{$imgfullWebp:= $imgfull.Resize "1920x webp" }}
                   <a href="{{$imgfullWebp.RelPermalink}}" class="item">

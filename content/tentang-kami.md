@@ -57,7 +57,7 @@ tim:
     jabatan: "Project Manager"
   - nama: "Fiane"
     jabatan: "Administrasi"
-  - nama: "Rina Christianti"
+  - nama: "Hartini"
     jabatan: "Keuangan"
   - nama: "Kadi"
     jabatan: "Supervisor"

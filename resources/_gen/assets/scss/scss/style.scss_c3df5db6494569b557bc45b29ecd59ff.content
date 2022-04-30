@@ -668,29 +668,32 @@ header {
   position: relative;
   overflow: hidden; }
   .banner h1 {
-    font-size: 38px;
-    color: #ffffff; }
+    font-size: 48px;
+    color: #ffffff;
+    text-shadow: -2px -2px 0 #144ca0,   2px -2px 0 #144ca0, -2px 2px 0 #144ca0, 2px 2px 0 #144ca0; }
     @media (max-width: 575px) {
       .banner h1 {
         font-size: 22px; } }
   .banner h2 {
     font-size: 22px;
-    color: #ffffff; }
+    color: #ffffff;
+    text-shadow: -2px -2px 0 #144ca0,   2px -2px 0 #144ca0, -2px 2px 0 #144ca0, 2px 2px 0 #144ca0; }
     @media (max-width: 575px) {
       .banner h2 {
         font-size: 18px; } }
   .banner .block {
     padding: 80px 180px 80px;
-    background: url("/images/banner-photo.webp") no-repeat center center;
+    background: url("/images/banner-bg-blue.webp") no-repeat center center;
     background-size: cover;
     /* filter: brightness(70%); */
     border-radius: 30px; }
     @media (max-width: 1466px) {
       .banner .block {
-        padding: 100px 30px 100px; } }
+        padding: 80px 30px 80px; } }
     @media (max-width: 575px) {
       .banner .block {
-        padding: 100px 15px 100px; } }
+        padding: 60px 15px 60px;
+        margin-top: 20px; } }
   .banner .block,
   .banner .banner-image {
     position: relative;
@@ -1011,6 +1014,15 @@ header {
         transition: .35s ease;
       }
     } */ }
+  .features-blocks .features-card .findex {
+    position: absolute;
+    left: 35px;
+    top: 40px;
+    background: #0984e3;
+    display: block;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: bold; }
   @media (max-width: 767px) {
     .features-blocks .features-card {
       padding: 25px; } }
@@ -1020,7 +1032,7 @@ header {
   .features-blocks .features-card:hover {
     box-shadow: none;
     border-color: #bce0fc;
-    transform: translateY(-2px); }
+    /* transform: translateY(-2px); */ }
     .features-blocks .features-card:hover .icon {
       transition: .25s ease; }
       .features-blocks .features-card:hover .icon::after {

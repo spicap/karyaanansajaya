@@ -8,12 +8,12 @@ logo_width = "240x"
 # logo text will only show when logo is missing.
 logo_text = "Andromeda"
 # OpenGraph / Twitter Card metadata
-description = "Jasa Konstruksi & General Kontraktor Jogja - CV. Karya Anansa Jaya"
+description = "General Contractor & Supplier - CV. Karya Anansa Jaya"
 author = "CV. Karya Anansa Jaya"
 image = "images/logo.png"                # this image will be used as fallback if a page has no image of its own
 
 # footer information
-footer_info = "Jasa Konstruksi & General Kontraktor Jogja. Memberikan kepercayaan berdasarkan kualitas, ketepatan, serta harga yang kompetitif."
+footer_info = "General Contractor & Supplier<br>Memberikan kepercayaan berdasarkan kualitas, ketepatan, serta harga yang kompetitif."
 
 # contact form action
 contact_form_action = "" # contact form works with https://formspree.io
@@ -35,7 +35,7 @@ reading_time = true
 
 # contact information
 [contact_info]
-address = "Perumahan Alam Citra Blok F-33, Panggungharjo, Sewon, Bantul, Yogyakarta 55188"
+address = "Jl. Parangtritis Km.7, Panggungharjo, Sewon, Bantul, Yogyakarta 55188"
 phone = "081270054464"
 email = "kajsaja@yahoo.com"
 

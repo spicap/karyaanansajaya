@@ -76,16 +76,20 @@
         </div>
         <div class="features-carousel swiper-container">
           <div class="swiper-wrapper align-items-center">
-            {{range .fimages}}
+
+            {{range $index, $element := .fimages}}
             <div class="swiper-slide">
               <div class="features-card">
                 {{ if fileExists (add `assets/` .fimg) }}
                 {{$fimg:= resources.Get .fimg }}
                 {{$fimg:= $fimg.Resize "630x"}}
                 {{$fimgWebp:= $fimg.Resize "630x webp"}}
-                <img loading="lazy" decoding="async" class="img-fluid" width="{{$fimg.Width}}" height="{{$fimg.Height}}" src="{{$fimgWebp.RelPermalink}}" alt="testimonials" onerror="this.onerror=null;this.src='{{$fimg.RelPermalink}}'">
+                <a href="/portofolio/{{.flink | markdownify}}/">
+                  <img loading="lazy" decoding="async" class="img-fluid" width="{{$fimg.Width}}" height="{{$fimg.Height}}" src="{{$fimgWebp.RelPermalink}}" alt="testimonials" onerror="this.onerror=null;this.src='{{$fimg.RelPermalink}}'">
+                </a>
                 {{end}}
                 <h3 class="title">{{.ftitle | markdownify}}</h3>
+                <div class="findex">{{add $index 1}} </div>
               </div>
             </div>
             {{end}}

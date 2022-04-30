@@ -142,13 +142,11 @@ $(document).ready(function () {
 		new Swiper('.brand-carousel', {
 			spaceBetween: 0,
 			speed: 1000,
-			loop: true,
-			autoplay: {
-				delay: 3000
-			},
-			breakpoints: {
+			loop: false,
+			slidesPerView: 3,
+			/* breakpoints: {
 				0: {
-					slidesPerView: 2,
+					slidesPerView: 3,
 					spaceBetween: 0
 				},
 				640: {
@@ -160,9 +158,12 @@ $(document).ready(function () {
 					spaceBetween: 0
 				},
 				991: {
-					slidesPerView: 5,
+					slidesPerView: 3,
 					spaceBetween: 0
 				}
+			}, */
+			autoplay: {
+				delay: 3000
 			}
 		});
 	}
@@ -172,23 +173,15 @@ $(document).ready(function () {
 	function featuresCarousel() {
 		new Swiper('.features-carousel', {
 			spaceBetween: 0,
-			speed: 600,
-			loop: true,
+			speed: 1000,
+			loop: false,
 			autoplay: true,
 			breakpoints: {
 				0: {
 					slidesPerView: 1,
 					spaceBetween: 0
 				},
-				575: {
-					slidesPerView: 1,
-					spaceBetween: 0
-				},
 				767: {
-					slidesPerView: 2,
-					spaceBetween: 0
-				},
-				991: {
 					slidesPerView: 2,
 					spaceBetween: 0
 				}
