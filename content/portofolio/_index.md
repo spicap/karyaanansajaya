@@ -26,7 +26,7 @@ portofolio:
     orientation: "landscape"
     link: "hono-kopi"
   - category: "rumah"
-    title: "Bapak Hartono Yogyakarta"
+    title: "Bapak Hartono<br>Alam Citra Yogyakarta"
     img: "images/portofolio/rumahpakhartono/rumah-pak-hartono-01.png"
     orientation: "landscape"
     link: "rumah-bapak-hartono"
