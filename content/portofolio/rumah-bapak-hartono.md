@@ -1,5 +1,5 @@
 ---
-title: "Bangunan Rumah Bapak Hartono"
+title: "Rumah Bapak Hartono Alam Citra Yogyakarta"
 draft: false
 layout: "portofoliosingle"
 

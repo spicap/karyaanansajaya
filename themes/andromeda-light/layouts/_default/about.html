@@ -84,7 +84,7 @@
 
 {{with .Params.legalitas}}
 {{if .enable}}
-<section data-aos="fade-up" class="section-sm legalitas">
+<section data-aos="fade-up" class="section-sm legalitas" id="legalitas">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12">
@@ -97,7 +97,7 @@
       {{range .block}}
       <div class="col-xl-5 col-lg-6">
         <div class="text-center px-0 px-md-5 mt-4">
-          <h3 class="text-capitalize">{{.title | markdownify}}</h3>
+          <h3 class="text-capitalize text-primary"><i class="las la-link"></i> <a href="{{.image}}" class="item text-primary">{{.title | markdownify}} </a></h3>
           <p>{{.content | markdownify}}</p>
         </div>
       </div>

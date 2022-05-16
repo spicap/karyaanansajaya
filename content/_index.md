@@ -111,7 +111,7 @@ testimonials:
   title: "Testimonial"
   quotes:
   - quote: "Selama bekerja di CIPUTRA GROUP Sdr. Taryanto sangat membantu menyelesaikan permasalahan proyek pembangunan perumahan CIPUTRA GROUP. Semoga sukses selalu!"
-    name: "Mushollin (General Manager CIPUTRA GROUP)"
+    name: "Mushollin (General Manager CitraSun Garden)"
     img: "images/testi-mushollin.png"
   - quote: "Terima kasih atas kerjasamanya selama ini. Kami sangat mengapresiasi. Menurut kami dari sisi administrasi, ketepatan waktu dan kualitas terjaga dengan baik. Sukses terus CV Karya Anansa Jaya!"
     name: "Martinus Rio W. (Project Manager Damai Putra Group)"

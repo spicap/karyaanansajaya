@@ -1,5 +1,5 @@
 ---
-title: "Bangunan Rumah Tipe Siena Vasana Residence"
+title: "Rumah Siena Type 120 Vasana Residence"
 draft: false
 layout: "portofoliosingle"
 

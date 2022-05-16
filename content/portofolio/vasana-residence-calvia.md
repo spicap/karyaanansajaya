@@ -1,5 +1,5 @@
 ---
-title: "Dua Bangunan Rumah Tipe Calvia Vasana Residence"
+title: "Rumah Calvia Type 80 Vasana Residence"
 draft: false
 layout: "portofoliosingle"
 

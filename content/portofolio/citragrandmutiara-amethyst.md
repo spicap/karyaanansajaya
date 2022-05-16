@@ -1,5 +1,5 @@
 ---
-title: "Bangunan Rumah Tipe Amethyst CitraGrand Mutiara"
+title: "Rumah Amethyst Type 260 CitraGrand Mutiara"
 draft: false
 layout: "portofoliosingle"
 

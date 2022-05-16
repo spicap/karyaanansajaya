@@ -1,5 +1,5 @@
 ---
-title: "Bangunan Rumah Tipe Opulencia CitraSun Garden"
+title: "Rumah Opulencia Type 263 CitraSun Garden"
 draft: false
 layout: "portofoliosingle"
 

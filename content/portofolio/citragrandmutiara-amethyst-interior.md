@@ -1,5 +1,5 @@
 ---
-title: "Interior Rumah Tipe Amethyst CitraGrand Mutiara"
+title: "Interior Amethyst Tipe 260 CitraGrand Mutiara"
 draft: false
 layout: "portofoliosingle"
 

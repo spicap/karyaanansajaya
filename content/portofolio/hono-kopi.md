@@ -1,5 +1,5 @@
 ---
-title: "Bangunan Hono Kopi Coffee Shop"
+title: "Hono Kopi Coffee Shop"
 draft: false
 layout: "portofoliosingle"
 

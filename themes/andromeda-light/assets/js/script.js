@@ -265,9 +265,15 @@ $(document).ready(function () {
 		});
 	});
   
-	/* LIGHTGALLERY */
+	/* LIGHTGALLERY PORTOFOLIO*/
 	lightGallery(document.getElementById('portofolio-gallery'), {
     selector: '.item',
+	});
+
+	/* LIGHTGALLERY ABOUT*/
+	lightGallery(document.getElementById('legalitas'), {
+		selector: '.item',
+		counter : false
 	});
 
 });

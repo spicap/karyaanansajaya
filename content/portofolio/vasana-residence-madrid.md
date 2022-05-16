@@ -1,5 +1,5 @@
 ---
-title: "(ON PROGRESS) Bangunan Rumah Tipe Madrid Vasana Residence"
+title: "Rumah Madrid Type 275 Vasana Residence<br>(ON PROGRESS)"
 draft: false
 layout: "portofoliosingle"
 
