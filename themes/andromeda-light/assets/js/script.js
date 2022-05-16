@@ -245,6 +245,10 @@ $(document).ready(function () {
 	}); */
 
 	var $grid = $('.grid').isotope({
+		layoutMode: 'fitRows',
+		fitRows: {
+			gutter: 10
+		},
 		itemSelector: '.element-item'
 	});
 
